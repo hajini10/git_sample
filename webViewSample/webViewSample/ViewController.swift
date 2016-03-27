@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         myFacebookButton.layer.cornerRadius = 50.0
         myFacebookButton.layer.position = CGPoint(x: self.view.frame.width - 320, y:self.view.frame.height - 115)
         myFacebookButton.tag = 1
-        myFacebookButton.addTarget(self, action: Selector("onPostToFacebook:"), forControlEvents: .TouchUpInside)
+        myFacebookButton.addTarget(self, action: #selector(ViewController.onPostToFacebook(_:)), forControlEvents: .TouchUpInside)
         // twitter用のボタンを画面に表示させるための設定
         self.view.addSubview(myTwitterButton)
         // facebook用のボタンを画面に表示させるための設定
